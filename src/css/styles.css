@@ -1,42 +1,49 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 p {
   margin: 0;
+  width: fit-content;
 }
-
-p:last-child {
-  margin-bottom: 0;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
 }
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-a {
-  color: currentColor;
-  text-decoration: none;
-}
-
 button {
   cursor: pointer;
   border-radius: 4px;
   background-color: blue;
   color: aliceblue;
 }
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
 .form {
   display: flex;
-  margin-top: 4px;
-  margin-left: 40%;  
+  justify-content: center; 
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+input {
+  margin-right: 8px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.gallery-link {
+  flex-basis: calc((100% - 36px) / 5);
+  color: currentColor;
+  text-decoration: none;
+}
+.gallery-img {
+  width: 400px;
+}
+
+img{
+  display: block;
+  width: 100%;
+  height: auto;
 }
